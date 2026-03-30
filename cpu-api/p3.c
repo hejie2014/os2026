@@ -24,7 +24,8 @@ int main(int argc, char *argv[])
         myargs[1] = strdup("p3.c"); // argument: file to count
         myargs[2] = NULL;           // marks end of array
 
-                execvp(myargs[0], myargs); // runs word count
+        // execvp(myargs[0], myargs); // runs word count
+        printf("number: %d\n", execvp(myargs[0], myargs));
         printf("this shouldn't print out\n");
     }
     else
